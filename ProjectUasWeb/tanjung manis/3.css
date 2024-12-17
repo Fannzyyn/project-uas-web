@@ -1,0 +1,160 @@
+/* Sama dengan style.css, hanya bisa diubah jika ada perbedaan */
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body dan header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #009688;
+    padding: 20px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: #00796b;
+    border-radius: 5px;
+}
+
+/* Styling logo */
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #388e3c;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2e7d32;
+}
+
+/* Styling untuk FAQ */
+.faq {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.faq .question {
+    margin-bottom: 20px;
+}
+
+.faq .question strong {
+    font-size: 18px;
+}
+
+.faq .question p {
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Styling untuk ikon media sosial */
+/* Styling untuk ikon media sosial */
+.social-media {
+    text-align: center;
+    margin-top: 40px;
+    display: flex; /* Gunakan flexbox untuk tata letak horizontal */
+    justify-content: center; /* Menjaga ikon di tengah */
+    gap: 15px; /* Jarak antar ikon media sosial */
+    flex-wrap: wrap; /* Agar jika layar lebih kecil, ikon media sosial bisa pindah ke bawah */
+}
+
+.social-icon {
+    display: inline-block;
+    background-color: #00796b;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Mencegah teks melengkung */
+}
+
+.social-icon:hover {
+    background-color: #004d40;
+}
+
+.social-icon i {
+    margin-right: 10px;
+}

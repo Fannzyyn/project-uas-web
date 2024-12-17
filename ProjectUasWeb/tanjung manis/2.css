@@ -1,0 +1,115 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body dan header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #009688;
+    padding: 20px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: #00796b;
+    border-radius: 5px;
+}
+
+/* Styling logo */
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+
+/* Styling untuk pengenalan proyek */
+.intro {
+    text-align: center;
+    padding: 40px;
+}
+
+.intro h1 {
+    color: #004d40;
+}
+
+.intro p {
+    color: #00796b;
+}
+
+/* Styling untuk inovasi proyek */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Membuat grid 3 kolom */
+    gap: 20px;
+    padding: 40px;
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project h2 {
+    color: #004d40;
+    margin-top: 10px;
+}
+
+.project p {
+    color: #00796b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;  /* Menyesuaikan menjadi 2 kolom di layar kecil */
+    }
+
+    .project {
+        width: 90%;  /* Memperbesar proyek pada layar kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        grid-template-columns: 1fr;  /* Menjadi 1 kolom di layar sangat kecil */
+    }
+}

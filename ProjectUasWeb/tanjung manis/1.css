@@ -1,0 +1,97 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body dan header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #009688;
+    padding: 20px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: #00796b;
+    border-radius: 5px;
+}
+
+/* Styling logo */
+.logo img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+/* Styling untuk section pengenalan */
+section.intro {
+    padding: 40px;
+    text-align: center;
+    background-color: #004d40;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Styling untuk gambar latar belakang */
+section.image-section {
+    position: relative;
+    height: 60vh; /* Membuat tinggi gambar lebih moderat */
+    width: 100%;
+    background-image: url('/tanjungku.jpg'); /* Ganti dengan path gambar yang sesuai */
+    background-size: contain; /* Gambar tetap proporsional dan tidak memanjang */
+    background-position: center center; /* Pusatkan gambar di layar */
+    background-repeat: no-repeat; /* Gambar tidak terulang */
+}
+
+/* Styling untuk tentang Tanjung Manis */
+section.about {
+    padding: 40px;
+    text-align: center;
+    color: #00796b;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+}
